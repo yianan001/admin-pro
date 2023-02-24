@@ -11,7 +11,7 @@ const About = () => {
   const list = useSelector((state: RootState) => state.app.list)
   const dispatch = useDispatch<AppDispatch>()
   const [page, setPage] = useState(1)
-  const [search, setSearch] = useState({})
+  const [search, setSearch] = useState('')
 
   const handlerSetToken = () => {
     dispatch(fetchUserById(uid()))
