@@ -25,6 +25,7 @@ const About = () => {
       setPage(page + 1)
       setSearch(uid())
       message.success('搜索成功')
+      message.success('搜索成功')
     })
   }
   return (
