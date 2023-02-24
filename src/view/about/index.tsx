@@ -1,4 +1,4 @@
-import { Button, Space } from 'antd'
+import { Button, message, Space } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
 import { AppDispatch, RootState } from '../../store'
 import { fetchUserById } from '@/store/app'
@@ -24,6 +24,7 @@ const About = () => {
     unstable_batchedUpdates(() => {
       setPage(page + 1)
       setSearch(uid())
+      message.success('搜索成功')
     })
   }
   return (
