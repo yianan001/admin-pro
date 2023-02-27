@@ -15,7 +15,7 @@ const getList = (id: string) => {
   })
 }
 export const fetchUserById = createAsyncThunk('users/fetchByIdStatus', async(id: string) => {
-  const response:any = await getList(id)
+  const response: any = await getList(id)
   return response.json()
 })
 export const countSlice = createSlice({
@@ -28,7 +28,7 @@ export const countSlice = createSlice({
   reducers: {
     setToken(state, action: PayloadAction<string>) {
       state.token = action.payload
-      // cookie中 设置 token，  有效事件10分钟
+      // cookie中 设置 token，  有效时间10分钟
       cookie.set('token', action.payload, { expires: 1 / 24 / 6 })
     },
     setMenuAuth(state, action: PayloadAction<string[]>) {

@@ -12,13 +12,13 @@ function Layout() {
   const routeAuth = useSelector((state: any) => state.app.menuAuth)
   const navigate = useNavigate()
   const disaptch = useDispatch<AppDispatch>()
+
   useEffect(() => {
     setTimeout(() => {
       disaptch(setMenuAuth(['about', 'ad']))
     }, 1000)
   }, [disaptch])
 
-  console.log('更新了', pathname)
   const currentRouters = useMemo(() => {
     console.log('#########')
     return router.filter(e => e.path === '/').map(e => {
@@ -88,7 +88,6 @@ function Layout() {
             <Outlet></Outlet>
           </ProCard>
         </PageContainer>
-
       </ProLayout>
     </div >
   )
