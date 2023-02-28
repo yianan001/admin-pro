@@ -32,12 +32,12 @@ export const router = [
       },
       {
         path: 'ad',
-        title: '广告',
+        title: '测试1',
         element: <div>ad</div>
       },
       {
         path: 'about',
-        title: '关于',
+        title: '测试2',
         element: <About></About>
       },
       {
