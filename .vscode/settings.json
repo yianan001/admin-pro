@@ -22,7 +22,7 @@
     "leek-fund.stockRemindSwitch": 0,
     "leek-fund.hideStatusBar": true,
     "commentTranslate.targetLanguage": "zh-CN",
-    "commentTranslate.hover.enabled": false,
+    "commentTranslate.hover.enabled": true,
     
  }
 

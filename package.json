@@ -5,6 +5,7 @@
   "dependencies": {
     "@ant-design/pro-components": "^2.3.57",
     "@craco/craco": "^7.0.0",
+    "@cycjimmy/jsmpeg-player": "^6.0.5",
     "@loadable/component": "^5.15.3",
     "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.14.1",
