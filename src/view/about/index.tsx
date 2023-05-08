@@ -18,7 +18,7 @@ const About = () => {
   return (
     <div className='about'>
       <Space direction='vertical'>
-        <h1> about </h1>
+        <h1>about </h1>
         <ul>
           {
             list.map((item) => <li key={item.id}>uid : [{item.id}]</li>)
